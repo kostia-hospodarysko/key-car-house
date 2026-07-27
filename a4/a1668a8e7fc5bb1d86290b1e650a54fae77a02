@@ -1,0 +1,35 @@
+.github/workflows/deploy.yml
+  s_f426517e9c4442::t_21b2f8aa7174fb 1-36
+.gitignore
+  s_f426517e9c4442::t_616d571e950dfd 1-4
+README.md
+  s_f426517e9c4442::t_e5a178f5e08377 1-49
+astro.config.mjs
+  s_f426517e9c4442::t_f89e6adb31080a 1-7
+package-lock.json
+  s_f426517e9c4442::t_7bd7bbcabdf68b 1-5467
+package.json
+  s_f426517e9c4442::t_1abf4d8cc6c608 1-14
+public/images/work/.gitkeep
+  s_f426517e9c4442::t_0e049b8a00ca04 1
+src/components/Header.astro
+  s_f426517e9c4442::t_01f2212a7166df 1-35
+src/styles/global.css
+  s_f426517e9c4442::t_4e77b4b250b9b2 1-919
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "a4a1668a8e7fc5bb1d86290b1e650a54fae77a02",
+  "prompts": {},
+  "sessions": {
+    "s_f426517e9c4442": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fa32d-34b1-7802-ba2f-1f2ad60882b2",
+        "model": "unknown"
+      },
+      "human_author": "Kostia Hospodarysko <kostia-hospodarysko@users.noreply.github.com>"
+    }
+  }
+}
