@@ -1,0 +1,35 @@
+---
+const nav = [
+  { href: "#services", label: "Послуги" },
+  { href: "#works", label: "Наші роботи" },
+  { href: "#contacts", label: "Контакти" },
+];
+---
+
+<header class="site-header" data-header>
+  <div class="container header-inner">
+    <a class="wordmark" href="#top" aria-label="На початок сторінки">
+      <span>Автоключі<br /><small>Тернопіль</small></span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Головна навігація">
+      {nav.map((item) => <a href={item.href}>{item.label}</a>)}
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-button theme-toggle" type="button" aria-label="Перемкнути тему">
+        <span class="theme-icon theme-icon-sun" aria-hidden="true">☀</span>
+        <span class="theme-icon theme-icon-moon" aria-hidden="true">☾</span>
+      </button>
+      <a class="button button-small desktop-call" href="tel:+380962297103">Зателефонувати</a>
+      <button class="icon-button menu-toggle" type="button" aria-label="Відкрити меню" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-nav" aria-label="Мобільна навігація">
+    {nav.map((item) => <a href={item.href}>{item.label}</a>)}
+    <a href="tel:+380962297103">+38 096 229 71 03</a>
+  </nav>
+</header>

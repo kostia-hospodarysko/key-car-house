@@ -1,0 +1,38 @@
+---
+const base = import.meta.env.BASE_URL;
+const works = [
+  { image: `${base}/images/work/work-1.webp`, alt: "Приклад виконаної роботи з автомобільним ключем" },
+  { image: `${base}/images/work/work-2.webp`, alt: "Виготовлений автомобільний ключ" },
+  { image: `${base}/images/work/work-3.webp`, alt: "Приклад програмування автомобільного ключа" },
+  { image: `${base}/images/work/work-4.webp`, alt: "Готовий автомобільний ключ" },
+];
+---
+
+<section class="section" id="works">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <p class="section-kicker">Практичний досвід</p>
+        <h2>Наші роботи</h2>
+      </div>
+      <p>Тут з’являтимуться фотографії виконаних робіт. Детальні описи можна додати пізніше.</p>
+    </div>
+    <div class="works-grid">
+      {works.map((work, index) => (
+        <button class:list={["work-card", { "work-featured": index === 0 }]} type="button" data-work-image={work.image} data-work-alt={work.alt}>
+          <img src={work.image} alt={work.alt} loading="lazy" />
+          <span class="work-placeholder" aria-hidden="true">
+            <span>Фото роботи</span>
+            <small>Додайте зображення {index + 1}</small>
+          </span>
+          <span class="work-caption">Виконана робота <b>↗</b></span>
+        </button>
+      ))}
+    </div>
+  </div>
+</section>
+
+<dialog class="lightbox" aria-label="Перегляд фотографії">
+  <button class="lightbox-close" type="button" aria-label="Закрити">×</button>
+  <img src="" alt="" />
+</dialog>

@@ -1,0 +1,26 @@
+---
+const steps = [
+  { number: "1", title: "Напишіть або зателефонуйте", text: "Коротко опишіть ситуацію та назвіть марку автомобіля." },
+  { number: "2", title: "Уточнимо деталі", text: "Погодимо можливе рішення, час та місце зустрічі." },
+  { number: "3", title: "Виконаємо роботу", text: "Приїдемо та допоможемо на місці у Тернополі або області." },
+];
+---
+
+<section class="section section-muted">
+  <div class="container">
+    <div class="section-heading compact">
+      <div>
+        <p class="section-kicker">Як це працює</p>
+        <h2>Три прості кроки</h2>
+      </div>
+    </div>
+    <div class="process-grid">
+      {steps.map((step) => (
+        <article class="process-step observe">
+          <span>{step.number}</span>
+          <div><h3>{step.title}</h3><p>{step.text}</p></div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
