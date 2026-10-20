@@ -1,5 +1,5 @@
 ---
-const base = import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 const works = [
   { image: `${base}/images/work/work-1.webp`, alt: "Приклад виконаної роботи з автомобільним ключем" },
   { image: `${base}/images/work/work-2.webp`, alt: "Виготовлений автомобільний ключ" },
