@@ -42,6 +42,17 @@ const observer = new IntersectionObserver(
 
 document.querySelectorAll(".observe").forEach((item) => observer.observe(item));
 
+const hero = document.querySelector(".hero");
+const mobileWhatsapp = document.querySelector(".mobile-whatsapp");
+
+if (hero && mobileWhatsapp) {
+  const heroObserver = new IntersectionObserver(
+    ([entry]) => mobileWhatsapp.classList.toggle("is-visible", !entry.isIntersecting),
+    { threshold: 0.08 },
+  );
+  heroObserver.observe(hero);
+}
+
 const dialog = document.querySelector(".lightbox");
 const dialogImage = dialog?.querySelector("img");
 
