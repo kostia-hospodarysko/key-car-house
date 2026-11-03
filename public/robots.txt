@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ternopil-key-unlock.up.railway.app/sitemap.xml
