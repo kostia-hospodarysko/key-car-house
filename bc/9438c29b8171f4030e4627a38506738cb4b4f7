@@ -1,0 +1,21 @@
+src/components/WorkGallery.astro
+  s_e950eb21acb172::t_f726e6ad717ed5 4-11,22
+src/styles/global.css
+  s_e950eb21acb172::t_93cdfc12efd899 538-539,943
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "bc9438c29b8171f4030e4627a38506738cb4b4f7",
+  "prompts": {},
+  "sessions": {
+    "s_e950eb21acb172": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a2121d-282f-7851-a4cf-b95964314b79",
+        "model": "unknown"
+      },
+      "human_author": "Kostia Hospodarysko <kostia-hospodarysko@users.noreply.github.com>"
+    }
+  }
+}
